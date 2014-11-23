@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'maze/cli'
+
+Maze::CLI.start(ARGV)
