@@ -4,17 +4,19 @@ module Maze
   class Config
     attr_reader :hash
 
-    def initialize( args = {} )
-      if File.exists?(args[:file])
+    def initialize( args = { :file => 'drill.conf' } )
+      if args[:file] && File.exists?(args[:file])
         @hash = YAML.load_file(args[:file])
-      else
-        puts "#{options[:config]} not found!"
-        exit
       end
     end
 
     def method_missing(key)
-      @hash[key.to_s]
+      if @hash
+        @hash[key.to_s]
+      else
+        puts "Config not found!"
+        exit
+      end
     end
 
   end

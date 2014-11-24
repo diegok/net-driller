@@ -1,5 +1,5 @@
 require 'thor'
-require 'maze/config'
+require 'maze/app'
 
 module Maze
   class CLI < Thor
@@ -9,23 +9,29 @@ module Maze
 
     def initialize(*args)
       super
-      puts options[:config]
-      @cfg = Maze::Config.new( :file => options[:config] )
+      @app = Maze::App.new( :file => options[:config] )
+    end
+
+    desc 'test', 'Check tunnels are configured and working.'
+    def test()
+      @app.say 'Un log'
+      @app.say 'Otro log'
+      @app.log.error 'OMG!'
     end
 
     desc 'up', 'Ensure tunnels are configured and working.'
     def up()
-      puts "TODO: up command"
+      @app.say "TODO: up command"
     end
 
     desc 'down', 'Ensure tunnels are removed and turned off.'
     def down()
-      puts "TODO: down command"
+      @app.say "TODO: down command"
     end
 
     desc 'restart', 'Same as calling down and then up.'
     def restart()
-      puts "TODO: restart command"
+      @app.say "TODO: restart command"
     end
 
   end
