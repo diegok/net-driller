@@ -1,6 +1,10 @@
 require 'logger'
 
-module Maze
+class Net
+class Driller
+
   class Logger < Logger
   end
+
+end
 end

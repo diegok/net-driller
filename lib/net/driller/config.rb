@@ -1,7 +1,10 @@
 require 'yaml'
 
-module Maze
+class Net
+class Driller
+
   class Config
+
     attr_reader :hash
 
     def initialize( args = { :file => 'drill.conf' } )
@@ -20,4 +23,6 @@ module Maze
     end
 
   end
+
+end
 end

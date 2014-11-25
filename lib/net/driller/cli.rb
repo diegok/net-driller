@@ -1,7 +1,9 @@
 require 'thor'
-require 'maze/app'
+require 'net/driller'
 
-module Maze
+class Net
+class Driller
+
   class CLI < Thor
 
     class_option :config, :aliases => ["-c"], :type => :string
@@ -9,7 +11,7 @@ module Maze
 
     def initialize(*args)
       super
-      @app = Maze::App.new( :file => options[:config] )
+      @app = Net::Driller.new( :file => options[:config] )
     end
 
     desc 'test', 'Check tunnels are configured and working.'
@@ -35,5 +37,7 @@ module Maze
     end
 
   end
+
+end
 end
 

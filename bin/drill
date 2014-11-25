@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'net/driller/cli'
+
+Net::Driller::CLI.start(ARGV)

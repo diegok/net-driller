@@ -1,8 +1,8 @@
 Gem::Specification.new do |s|
-  s.name              = "maze"
+  s.name              = "Net::Driller"
   s.version           = '1.0.0'
-  s.summary           = "Maze is a vRack builder for boxes with single ifaces (like OVH)."
-  s.homepage          = "https://github.com/diegok/maze"
+  s.summary           = "Drill is a vRack builder for boxes with single ifaces (like OVH)."
+  s.homepage          = "https://github.com/diegok/net-drill"
   s.email             = ["diego@freekeylabs.com", "ivan@sysdivision.com"]
   s.authors           = ["Diego Kuperman", "Ivan Belmonte"]
 
@@ -18,6 +18,6 @@ Gem::Specification.new do |s|
   s.add_dependency "json"
 
   s.description = %s{
-    Maze is a system to manage a tunnel based virtual rack for several boxes
+    Drill is a system to manage a tunnel based virtual rack for several boxes
     without private interfaces (kinda OVH)}
 end
