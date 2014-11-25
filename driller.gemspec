@@ -2,7 +2,7 @@ Gem::Specification.new do |s|
   s.name              = "Net::Driller"
   s.version           = '1.0.0'
   s.summary           = "Drill is a vRack builder for boxes with single ifaces (like OVH)."
-  s.homepage          = "https://github.com/diegok/net-drill"
+  s.homepage          = "https://github.com/diegok/net-driller"
   s.email             = ["diego@freekeylabs.com", "ivan@sysdivision.com"]
   s.authors           = ["Diego Kuperman", "Ivan Belmonte"]
 
