@@ -1,8 +1,8 @@
 require 'thor'
 require 'net/driller'
 
-class Net
-class Driller
+class Net::Driller
+#class Driller
 
   class CLI < Thor
 
@@ -15,29 +15,29 @@ class Driller
     end
 
     desc 'test', 'Check tunnels are configured and working.'
-    def test()
+    def test
       @app.say 'Un log'
       @app.say 'Otro log'
       @app.log.error 'OMG!'
     end
 
     desc 'up', 'Ensure tunnels are configured and working.'
-    def up()
+    def up
       @app.say "TODO: up command"
     end
 
     desc 'down', 'Ensure tunnels are removed and turned off.'
-    def down()
+    def down
       @app.say "TODO: down command"
     end
 
     desc 'restart', 'Same as calling down and then up.'
-    def restart()
+    def restart
       @app.say "TODO: restart command"
     end
 
   end
 
 end
-end
+#end
 
