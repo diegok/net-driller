@@ -1,3 +1,43 @@
-test:
-  uno: Esto es solo una prueba
-  dos: Esto es solo una prueba
+tunnel_range: 10.11 # B class (/16)
+
+hosts:
+  hw1:
+    fqdn: hw1.example.com
+    public_ip: 1.2.3.4
+    local_range: 10.10.11.0
+    local_netmask: 255.255.255.0
+  hw2:
+    fqdn: hw2.example.com
+    public_ip: 1.2.3.4
+    local_range: 10.10.12.0
+    local_netmask: 255.255.255.0
+  hw3:
+    fqdn: hw3.example.com
+    public_ip: 1.2.3.4
+    local_range: 10.10.13.0
+    local_netmask: 255.255.255.0
+  hw4:
+    fqdn: hw4.example.com
+    public_ip: 1.2.3.4
+    local_range: 10.10.14.0
+    local_netmask: 255.255.255.0
+  hw5:
+    fqdn: hw5.example.com
+    public_ip: 1.2.3.4
+    local_range: 10.10.15.0
+    local_netmask: 255.255.255.0
+  hw6:
+    fqdn: hw6.example.com
+    public_ip: 1.2.3.4
+    local_range: 10.10.16.0
+    local_netmask: 255.255.255.0
+  hw7:
+    fqdn: hw7.example.com
+    public_ip: 1.2.3.4
+    local_range: 10.10.17.0
+    local_netmask: 255.255.255.0
+  hw8:
+    fqdn: hw8.example.com
+    public_ip: 1.2.3.4
+    local_range: 10.10.18.0
+    local_netmask: 255.255.255.0
