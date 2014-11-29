@@ -1,4 +1,6 @@
 require 'logger'
 
-class Net::Driller::Logger < Logger
-end
+module Net; class Driller
+  class Logger < Logger
+  end
+end; end

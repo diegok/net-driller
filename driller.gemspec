@@ -15,7 +15,8 @@ Gem::Specification.new do |s|
   s.rdoc_options      = ["--charset=UTF-8"]
 
   s.add_dependency "thor",            "~> 0.17"
-  s.add_dependency "json"
+  s.add_dependency "yaml"
+  s.add_dependency "net-ssh"
 
   s.description = %s{
     Drill is a system to manage a tunnel based virtual rack for several boxes

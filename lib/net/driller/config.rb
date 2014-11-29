@@ -1,6 +1,6 @@
 require 'yaml'
 
-class Net::Driller::Config
+module Net; class Driller; class Config
 
     attr_reader :hash
 
@@ -19,4 +19,4 @@ class Net::Driller::Config
       end
     end
 
-end
+end; end; end

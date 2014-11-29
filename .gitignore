@@ -1,0 +1,5 @@
+.*.swp
+.ruby-*
+Gemfile
+Gemfile.lock
+config/*
